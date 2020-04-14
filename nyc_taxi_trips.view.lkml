@@ -18,7 +18,7 @@ dimension_group: pickup {
     minute10,
     time_of_day
   ]
-  sql: ${TABLE}.pickup_datetime ;;
+  sql: timestamp(${TABLE}.pickup_datetime) ;;
 }
 
 dimension_group: dropoff {
@@ -36,7 +36,7 @@ dimension_group: dropoff {
     minute10,
     time_of_day
   ]
-  sql: ${TABLE}.dropoff_datetime ;;
+  sql: timestamp(${TABLE}.dropoff_datetime) ;;
 }
 
 dimension: pickup_minute10_of_day {
