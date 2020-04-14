@@ -1,4 +1,4 @@
-connection: "thelook_daily_updates"
+connection: "looker-private-demo"
 
 # include all views in this project
 include: "*.view"

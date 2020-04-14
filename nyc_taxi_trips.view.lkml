@@ -1,6 +1,6 @@
 view: nyc_taxi_trips {
-  #sql_table_name: `bigquery-public-data.new_york_taxi_trips.tlc_yellow_trips_2015` ;;
-  sql_table_name:  `nyc-tlc.yellow.trips` ;;
+  sql_table_name: `bigquery-public-data.new_york_taxi_trips.tlc_yellow_trips_2015` ;;
+  #sql_table_name:  `nyc-tlc.yellow.trips` ;;
   #   sql_table_name: "[nyc-tlc:yellow.trips],[nyc-tlc:green.trips_2015]"
 
 dimension_group: pickup {
