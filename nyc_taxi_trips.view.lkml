@@ -350,7 +350,7 @@ dimension: fare_rounded {
 
 dimension: trip_time_minutes {
   type: number
-  sql: (UNIX_SECONDS(${TABLE}.dropoff_datetime)-UNIX_SECONDS(${TABLE}.pickup_datetime))/60 ;;
+  sql: (TIMEDATE_DIFF(${TABLE}.dropoff_datetime,${TABLE}.pickup_datetime,SECONDS))/60 ;;
   value_format: "#0.0"
 }
 
